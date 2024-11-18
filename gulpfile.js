@@ -39,8 +39,13 @@ function sprite() {
       svgSprite({
         mode: {
           symbol: {
-            sprite: "../sprite.svg",
-            example: true,
+            sprite: "../_sprite.svg",
+            render: {
+              scss: {
+                dest: "../../../scss/_sprite.scss",
+                template: "assets/scss/templates/_sprite_template.scss",
+              },
+            },
           },
         },
       })
@@ -82,20 +87,19 @@ function purgeCss() {
     .pipe(dest("assets/styles/"));
 }
 
-function watching(done) {
+function watching() {
   browserSync.init({
-    port: 1337,
     server: {
       baseDir: "assets",
     },
   });
+
   watch(["assets/fonts/**/*"], fontsConvert);
   watch(["assets/scss/style.scss"], styles);
   watch(["assets/i/src/"], images);
   watch(["assets/js/main.js"], scripts);
   watch(["assets/pug/**/*.pug"], pugToHtml);
   watch(["assets/**/*.html"]).on("change", browserSync.reload);
-  done();
 }
 
 function cleanDist() {

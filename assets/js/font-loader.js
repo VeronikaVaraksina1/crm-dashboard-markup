@@ -48,4 +48,6 @@ function loadFont(a, b, c, d) {
   }
 }
 
-loadFont("roboto-regular", "styles/roboto-regular.css");
+loadFont("poppins-regular", "styles/poppins-regular.css");
+loadFont("poppins-medium", "styles/poppins-medium.css");
+loadFont("poppins-semibold", "styles/poppins-semibold.css");
