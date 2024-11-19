@@ -1,3 +1,5 @@
+include templates/_mixins
+
 - title = '';
 block vars
 
@@ -8,8 +10,9 @@ html(lang="en")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="format-detection" content="telephone=no")
         script(src="js/font-loader.js")
-        link(rel="stylesheet" media="all" href="styles/style.min.css")
+        link(rel="stylesheet" media="all" href="styles/main_global.min.css")
         title #{title}
     body 
         block content_block
+        include _main
         script(src="js/main.min.js")
