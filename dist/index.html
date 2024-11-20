@@ -9,13 +9,71 @@
     <title>Dashboard</title>
   </head>
   <body> 
-    <p>Hello World!</p>
-    <aside class="sidebar">
-      <h1 class="logo">Dashboard<span class="logo__span">
+    <main> 
+      <aside class="sidebar">
+        <div class="logo">
           <svg class="icon icon-logo ">
             <use xlink:href="i/sprite/sprite.svg#logo"></use>
-          </svg></span></h1>
-    </aside>
+          </svg>
+          <h1 class="logo__title">Dashboard <span class="logo__span">v.01</span></h1>
+        </div>
+        <nav class="nav_menu">
+          <ul class="nav_menu__list">
+            <li class="nav_menu__item"><a class="nav_menu__link" href="#">
+                <svg class="icon icon-key ">
+                  <use xlink:href="i/sprite/sprite.svg#key"></use>
+                </svg><span>Dashboard</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                </svg></a></li>
+            <li class="nav_menu__item"><a class="nav_menu__link" href="#">
+                <svg class="icon icon-cube ">
+                  <use xlink:href="i/sprite/sprite.svg#cube"></use>
+                </svg><span>Product</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                </svg></a></li>
+            <li class="nav_menu__item"><a class="nav_menu__link link-active" href="#">
+                <svg class="icon icon-user ">
+                  <use xlink:href="i/sprite/sprite.svg#user"></use>
+                </svg><span>Customers</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                </svg></a></li>
+            <li class="nav_menu__item"><a class="nav_menu__link" href="#">
+                <svg class="icon icon-wallet ">
+                  <use xlink:href="i/sprite/sprite.svg#wallet"></use>
+                </svg><span>Income</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                </svg></a></li>
+            <li class="nav_menu__item"><a class="nav_menu__link" href="#">
+                <svg class="icon icon-discount ">
+                  <use xlink:href="i/sprite/sprite.svg#discount"></use>
+                </svg><span>Promote</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                </svg></a></li>
+            <li class="nav_menu__item"><a class="nav_menu__link" href="#">
+                <svg class="icon icon-help ">
+                  <use xlink:href="i/sprite/sprite.svg#help"></use>
+                </svg><span>Help</span>
+                <svg class="icon icon-arrow ">
+                  <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                </svg></a></li>
+          </ul>
+        </nav>
+        <div class="avatar"> 
+          <picture class="avatar__picture">
+            <source class="avatar__source" srcset="i/avatar@1x.webp 1x, i/avatar@2x.webp 2x" type="image/webp"/>
+            <source class="avatar__source" srcset="i/avatar@1x.jpg 1x, i/avatar@2x.jpg 2x" type="image/png"/><img class="avatar__img" src="i/avatar@1x.png" alt="User avatar"/>
+          </picture>
+          <div class="avatar__container">
+            <p class="avatar__name">Evano </p><span class="avatar__role">Project Manager</span>
+          </div>
+        </div>
+      </aside>
+    </main>
     <script src="js/main.min.js"></script>
   </body>
 </html>

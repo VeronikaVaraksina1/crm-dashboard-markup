@@ -1,4 +1,12 @@
 mixin icon(name,mod)
-  - mod = mod || ''
-  svg(class="icon icon-" + name + ' ' + mod)
-    use(xlink:href="i/sprite/sprite.svg#" + name)
+    - mod = mod || ''
+    svg(class="icon icon-" + name + ' ' + mod)
+        use(xlink:href="i/sprite/sprite.svg#" + name)
+
+mixin navItem(iconId, text, mod="", hasArrow=true, link="#")
+    li.nav_menu__item
+        a.nav_menu__link(class=mod, href=link)
+            +icon(iconId)
+            span= text
+            if hasArrow
+                +icon("arrow")

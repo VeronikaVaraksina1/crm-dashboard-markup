@@ -136,9 +136,7 @@ exports.default = parallel(
   pugToHtml,
   styles,
   images,
-  fontsConvert,
   scripts,
-  purgeCss,
   watching,
   browsersync
 );
