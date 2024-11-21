@@ -1,0 +1,27 @@
+section.table
+    h2.table__title All Customers 
+    p.title__subtitle Active Members
+    include _search
+
+    table.table__content 
+        thead 
+            tr
+                th Customer Name
+                th Company
+                th Phone Number
+                th Email
+                th Country
+                th Status
+        tbody 
+            each customer in customers 
+                tr
+                    td #{customer.name}
+                    td #{customer.company}
+                    td #{customer.number}
+                    td #{customer.email}
+                    td #{customer.country}
+                    td 
+                        if customer.status == "Active"
+                            span Active
+                        else 
+                            span Unactive

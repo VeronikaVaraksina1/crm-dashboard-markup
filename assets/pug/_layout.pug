@@ -1,3 +1,4 @@
+include templates/_var
 include templates/_mixins
 
 - title = '';
@@ -14,5 +15,4 @@ html(lang="en")
         title #{title}
     body 
         block content_block
-        include _main
         script(src="js/main.min.js")

@@ -88,7 +88,7 @@ function purgeCss() {
 }
 
 function watching() {
-  watch(["assets/sass/main_global.scss"], styles);
+  watch(["assets/sass/**/*.scss"], styles);
   watch(["assets/i/"], images);
   watch(["assets/js/main.js"], scripts);
   watch(["assets/pug/**/*.pug"], pugToHtml);
