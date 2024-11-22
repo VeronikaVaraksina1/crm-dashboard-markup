@@ -1,0 +1,22 @@
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile__avatar_wrapper {
+    @extend .wrapper;
+    border-radius: 50%;
+}
+
+.profile__name {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.profile__role {
+    font-family: $poppins-reg;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    color: $name-gray;
+}

@@ -9,6 +9,11 @@
     <title>Dashboard</title>
   </head>
   <body> 
+    <button class="sidebar__menu_toggle" type="button">
+      <svg class="icon icon-menu ">
+        <use xlink:href="i/sprite/sprite.svg#menu"></use>
+      </svg>
+    </button>
     <aside class="sidebar">
       <button class="sidebar__menu_toggle" type="button">
         <svg class="icon icon-menu ">
@@ -28,7 +33,7 @@
                   <div class="nav_menu__wrapper"> 
                     <svg class="icon icon-key ">
                       <use xlink:href="i/sprite/sprite.svg#key"></use>
-                    </svg><span>Dashboard</span>
+                    </svg><span class="nav_menu__span">Dashboard</span>
                   </div>
                   <svg class="icon icon-arrow ">
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
@@ -37,7 +42,7 @@
                   <div class="nav_menu__wrapper"> 
                     <svg class="icon icon-cube ">
                       <use xlink:href="i/sprite/sprite.svg#cube"></use>
-                    </svg><span>Product</span>
+                    </svg><span class="nav_menu__span">Product</span>
                   </div>
                   <svg class="icon icon-arrow ">
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
@@ -46,7 +51,7 @@
                   <div class="nav_menu__wrapper"> 
                     <svg class="icon icon-user ">
                       <use xlink:href="i/sprite/sprite.svg#user"></use>
-                    </svg><span>Customers</span>
+                    </svg><span class="nav_menu__span">Customers</span>
                   </div>
                   <svg class="icon icon-arrow ">
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
@@ -55,7 +60,7 @@
                   <div class="nav_menu__wrapper"> 
                     <svg class="icon icon-wallet ">
                       <use xlink:href="i/sprite/sprite.svg#wallet"></use>
-                    </svg><span>Income</span>
+                    </svg><span class="nav_menu__span">Income</span>
                   </div>
                   <svg class="icon icon-arrow ">
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
@@ -64,7 +69,7 @@
                   <div class="nav_menu__wrapper"> 
                     <svg class="icon icon-discount ">
                       <use xlink:href="i/sprite/sprite.svg#discount"></use>
-                    </svg><span>Promote</span>
+                    </svg><span class="nav_menu__span">Promote</span>
                   </div>
                   <svg class="icon icon-arrow ">
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
@@ -73,7 +78,7 @@
                   <div class="nav_menu__wrapper"> 
                     <svg class="icon icon-help ">
                       <use xlink:href="i/sprite/sprite.svg#help"></use>
-                    </svg><span>Help</span>
+                    </svg><span class="nav_menu__span">Help</span>
                   </div>
                   <svg class="icon icon-arrow ">
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
@@ -82,10 +87,7 @@
           </nav>
         </div>
         <div class="profile"> 
-          <picture class="profile__picture">
-            <source class="profile__source" srcset="i/avatar@1x.webp 1x, i/avatar@2x.webp 2x" type="image/webp"/>
-            <source class="profile__source" srcset="i/avatar@1x.jpg 1x, i/avatar@2x.jpg 2x" type="image/png"/><img class="profile__img" src="i/avatar@1x.png" alt="User avatar"/>
-          </picture>
+          <div class="profile__avatar_wrapper"> <img class="profile__img" src="i/avatar.jpg" alt="" width="42" height="42"/></div>
           <div class="profile__info">
             <p class="profile__name">Evano </p><span class="profile__role">Project Manager</span>
           </div>

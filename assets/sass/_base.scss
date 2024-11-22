@@ -13,3 +13,16 @@ body {
 a {
     text-decoration: none;
 }
+
+img {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.wrapper {
+    overflow: hidden;
+}
