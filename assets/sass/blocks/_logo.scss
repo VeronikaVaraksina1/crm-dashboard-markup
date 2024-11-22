@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    align-items: flex-end;
+
+    .icon-logo {
+        font-size: 1.875rem;
+        color: $black;
+        margin: 0 12px 0 0;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 26px;
+        letter-spacing: 0.01em;
+        color: $black;
+    }
+
+    &__version {
+        font-weight: 500;
+        font-size: 10px;
+        letter-spacing: -0.01em;
+        color: $gray;
+    }
+}

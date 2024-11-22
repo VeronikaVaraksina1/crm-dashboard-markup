@@ -7,4 +7,9 @@
 // @import '../blocks/aside/aside.scss';
 // @import '../blocks/logo/logo.scss';
 
-@import "blocks/sidebar"
+@import "extends/variables";
+@import "_reset";
+@import "_base";
+@import "_sprite";
+@import "blocks/_logo";
+@import "blocks/sidebar";

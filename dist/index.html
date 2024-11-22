@@ -9,135 +9,18 @@
     <title>Dashboard</title>
   </head>
   <body> 
-    <div class="dashboard"> 
-      <div class="dashboard__content">
-        <main class="main">
-          <section class="welcome"> 
-            <h1 class="page__title">Hello, Evano 👋,</h1>
-          </section>
-          <section class="table">
-            <h2 class="table__title">All Customers </h2>
-            <p class="title__subtitle">Active Members</p>
-            <div class="search">
-              <label class="search-field">
-                <svg class="icon icon-search ">
-                  <use xlink:href="i/sprite/sprite.svg#search"></use>
-                </svg>
-                <input class="search-input" type="text" placeholder="Search"/>
-              </label>
-            </div>
-            <table class="table__content"> 
-              <thead> 
-                <tr>
-                  <th>Customer Name</th>
-                  <th>Company</th>
-                  <th>Phone Number</th>
-                  <th>Email</th>
-                  <th>Country</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody> 
-                <tr>
-                  <td>Jane Cooper</td>
-                  <td>Microsoft</td>
-                  <td>(225) 555-0118</td>
-                  <td>jane@microsoft.com</td>
-                  <td>United States</td>
-                  <td> <span>Active</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Floyd Miles</td>
-                  <td>Yahoo</td>
-                  <td>(205) 555-0100</td>
-                  <td>floyd@yahoo.com</td>
-                  <td>Kiribati</td>
-                  <td> <span>Unactive</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Ronald Richards</td>
-                  <td>Adobe</td>
-                  <td>(302) 555-0107</td>
-                  <td>ronald@adobe.com</td>
-                  <td>Israel</td>
-                  <td> <span>Unactive</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Marvin McKinney</td>
-                  <td>Tesla</td>
-                  <td>(252) 555-0126</td>
-                  <td>marvin@tesla.com</td>
-                  <td>Iran</td>
-                  <td> <span>Active</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Jerome Bell</td>
-                  <td>Google</td>
-                  <td>(629) 555-0129</td>
-                  <td>jerome@google.com</td>
-                  <td>Réunion</td>
-                  <td> <span>Active</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Kathryn Murphy</td>
-                  <td>Microsoft</td>
-                  <td>(406) 555-0120</td>
-                  <td>kathryn@microsoft.com</td>
-                  <td>Curaçao</td>
-                  <td> <span>Active</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Jacob Jones</td>
-                  <td>Yahoo</td>
-                  <td>(208) 555-0112</td>
-                  <td>jacob@yahoo.com</td>
-                  <td>Brazil</td>
-                  <td> <span>Active</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Kristin Watson</td>
-                  <td>Facebook</td>
-                  <td>(704) 555-0127</td>
-                  <td>kristin@facebook.com</td>
-                  <td>Åland Islands</td>
-                  <td> <span>Unactive</span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-          <div class="pagination">
-            <ul class="pagination__list"> 
-              <li class="pagination__item"><a href="#">&lt;</a></li>
-              <li class="pagination__item pagination__item-active"><a href="#">1</a></li>
-              <li class="pagination__item"><a href="#">2</a></li>
-              <li class="pagination__item"><a href="#">3</a></li>
-              <li class="pagination__item"><a href="#">4</a></li>
-              <li class="pagination__item"><span>...</span></li>
-              <li class="pagination__item"><a href="#">40</a></li>
-              <li class="pagination__item"><a href="#">&gt;</a></li>
-            </ul>
-          </div>
-        </main>
-      </div>
-      <aside class="sidebar">
-        <button class="sidebar__menu_toggle" type="button">
-          <svg class="icon icon-menu ">
-            <use xlink:href="i/sprite/sprite.svg#menu"></use>
-          </svg>
-        </button>
-        <div class="sidebar__menu"> 
-          <div class="logo"><a class="logo__title" href="#"> 
+    <aside class="sidebar">
+      <button class="sidebar__menu_toggle" type="button">
+        <svg class="icon icon-menu ">
+          <use xlink:href="i/sprite/sprite.svg#menu"></use>
+        </svg>
+      </button>
+      <div class="sidebar__menu">
+        <div class="sidebar__menu_container">
+          <div class="sidebar__logo"> <a class="logo" href="#"> 
               <svg class="icon icon-logo ">
                 <use xlink:href="i/sprite/sprite.svg#logo"></use>
-              </svg><span>Dashboard </span><span class="logo__span">v.01</span></a></div>
+              </svg><span class="logo__text">Dashboard </span><span class="logo__version">v.01</span></a></div>
           <nav class="nav_menu">
             <ul class="nav_menu__list">
               <li class="nav_menu__item"><a class="nav_menu__link" href="#">
@@ -184,18 +67,18 @@
                   </svg></a></li>
             </ul>
           </nav>
-          <div class="avatar"> 
-            <picture class="avatar__picture">
-              <source class="avatar__source" srcset="i/avatar@1x.webp 1x, i/avatar@2x.webp 2x" type="image/webp"/>
-              <source class="avatar__source" srcset="i/avatar@1x.jpg 1x, i/avatar@2x.jpg 2x" type="image/png"/><img class="avatar__img" src="i/avatar@1x.png" alt="User avatar"/>
-            </picture>
-            <div class="avatar__container">
-              <p class="avatar__name">Evano </p><span class="avatar__role">Project Manager</span>
-            </div>
+        </div>
+        <div class="profile"> 
+          <picture class="profile__picture">
+            <source class="profile__source" srcset="i/avatar@1x.webp 1x, i/avatar@2x.webp 2x" type="image/webp"/>
+            <source class="profile__source" srcset="i/avatar@1x.jpg 1x, i/avatar@2x.jpg 2x" type="image/png"/><img class="profile__img" src="i/avatar@1x.png" alt="User avatar"/>
+          </picture>
+          <div class="profile__info">
+            <p class="profile__name">Evano </p><span class="profile__role">Project Manager</span>
           </div>
         </div>
-      </aside>
-    </div>
+      </div>
+    </aside>
     <script src="js/main.min.js"></script>
   </body>
 </html>

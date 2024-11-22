@@ -78,7 +78,7 @@ function scripts() {
 }
 
 function purgeCss() {
-  return src(["assets/sass/*.scss", "!assets/sass/_sprite.scss"])
+  return src(["dist/styles/main_global.min.css"])
     .pipe(
       purgecss({
         content: ["assets/**/*.html", "assets/**/*.pug", "assets/**/*.js"],
