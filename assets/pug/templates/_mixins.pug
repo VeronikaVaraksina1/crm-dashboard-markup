@@ -6,7 +6,8 @@ mixin icon(name,mod)
 mixin navItem(iconId, text, mod="", hasArrow=true, link="#")
     li.nav_menu__item
         a.nav_menu__link(class=mod, href=link)
-            +icon(iconId)
-            span= text
+            .nav_menu__wrapper 
+                +icon(iconId)
+                span= text
             if hasArrow
                 +icon("arrow")

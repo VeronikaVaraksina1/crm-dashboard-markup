@@ -1,0 +1,54 @@
+.nav_menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.nav_menu__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 11px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    color: $menu-gray;
+    transition: background-color $transition, color $transition,
+        border $transition;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $black;
+        color: $white;
+        background-color: $violet;
+    }
+}
+
+.link_active {
+    @extend .nav_menu__link;
+
+    border: 1px solid $black;
+    color: $white;
+    background-color: $violet;
+}
+
+.icon-cube,
+.icon-discount,
+.icon-help,
+.icon-key,
+.icon-user,
+.icon-wallet {
+    font-size: 1.5rem;
+}
+
+.icon-arrow {
+    font-size: 0.625rem;
+}
+
+.nav_menu__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
