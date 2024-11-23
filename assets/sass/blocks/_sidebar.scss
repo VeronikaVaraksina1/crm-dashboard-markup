@@ -1,15 +1,3 @@
-@media screen and (max-width: 1024px) {
-    .sidebar {
-        position: absolute;
-        transform: translateX(-100%);
-        transition: transform $transition;
-    }
-
-    .open {
-        transform: translateX(0);
-    }
-}
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -20,7 +8,10 @@
     width: 100%;
     height: 100%;
     padding: 38px 28px;
+
     background-color: $white;
+    transform: translateX(-100%);
+    transition: transform $transition;
 
     &__menu {
         display: flex;
@@ -30,20 +21,37 @@
     }
 
     &__logo {
-        margin: 0 0 64px 0;
+        margin-bottom: 64px;
+    }
+
+    &.open {
+        transform: translateX(0);
     }
 }
 
-.sidebar__menu_toggle {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    z-index: 99999;
+.sidebar > {
+    .menu_toggle {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        z-index: 99999;
 
-    padding: 8px 5px;
+        padding: 5px;
 
-    .icon-menu {
-        font-size: 0.5rem;
-        color: $black;
+        .icon-close {
+            font-size: 0.9rem;
+            color: $black;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sidebar {
+        position: static;
+        transform: none;
+    }
+
+    .menu_toggle {
+        display: none;
     }
 }

@@ -4,9 +4,10 @@ block vars
   - title = "Dashboard";
 
 block content_block
-  button.sidebar__menu_toggle(type="button")
-    +icon("menu")
-  include blocks/_sidebar
+  include blocks/_header
+  include blocks/_welcome
+
+  //- include blocks/_sidebar
   //- .dashboard 
   //- .dashboard__content
   //-   include _main

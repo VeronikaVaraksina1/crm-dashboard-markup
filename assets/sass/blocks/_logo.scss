@@ -3,29 +3,35 @@
     align-items: center;
     gap: 12px;
     color: $black;
-    transform: scale(1);
-    transition: transform $transition;
-
-    &:hover,
-    &:focus {
-        transform: scale(1.05);
-    }
 }
 
 .icon-logo {
     font-size: 2.313rem;
-    color: $black;
+    color: inherit;
 }
 
 .logo__text {
     font-family: $poppins-semibold;
     font-size: 26px;
     letter-spacing: 0.01em;
-    color: $black;
+    color: inherit;
 }
 
 .logo__version {
     font-size: 10px;
     letter-spacing: -0.01em;
     color: $gray;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        transform: scale(1);
+        transition: transform $transition, color $transition;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+            color: $gray;
+        }
+    }
 }
