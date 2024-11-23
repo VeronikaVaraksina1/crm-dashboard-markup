@@ -11,7 +11,11 @@
 @import "_reset";
 @import "_base";
 @import "_sprite";
-@import "blocks/_header";
+@import "_header";
+@import "_main";
+@import "blocks/_welcome";
+@import "blocks/_table";
+@import "blocks/_customers";
 @import "blocks/_logo";
 @import "blocks/_nav_menu";
 @import "blocks/_profile";

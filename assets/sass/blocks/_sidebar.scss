@@ -1,11 +1,11 @@
 .sidebar {
+    flex-shrink: 0;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
 
-    max-width: 306px;
-    width: 100%;
+    width: 306px;
     height: 100%;
     padding: 38px 28px;
 
@@ -47,11 +47,12 @@
 
 @media screen and (min-width: 1024px) {
     .sidebar {
-        position: static;
         transform: none;
     }
 
-    .menu_toggle {
-        display: none;
+    .sidebar > {
+        .menu_toggle {
+            display: none;
+        }
     }
 }

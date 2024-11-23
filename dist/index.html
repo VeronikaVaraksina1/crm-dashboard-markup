@@ -4,21 +4,205 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="format-detection" content="telephone=no"/>
-    <script src="js/font-loader.js"></script>
     <link rel="stylesheet" media="all" href="styles/main_global.min.css"/>
     <title>Dashboard</title>
   </head>
-  <body> 
-    <header class="header"> 
-      <button class="menu_toggle" type="button">
-        <svg class="icon icon-menu ">
-          <use xlink:href="i/sprite/sprite.svg#menu"></use>
-        </svg>
-      </button>
-    </header>
-    <section class="welcome"> 
-      <h1 class="page__title">Hello, Evano 👋,</h1>
-    </section>
+  <body class="page"> 
+    <div class="page_content"> 
+      <header class="header"> 
+        <button class="menu_toggle" type="button">
+          <svg class="icon icon-menu ">
+            <use xlink:href="i/sprite/sprite.svg#menu"></use>
+          </svg>
+        </button>
+      </header>
+      <main class="main">
+        <div class="main__section_welcome">
+          <section class="welcome"> 
+            <h1 class="page__title">Hello Evano 👋,</h1>
+          </section>
+        </div>
+        <div class="customers"> 
+          <section class="table">
+            <h2 class="table__title">All Customers </h2>
+            <p class="title__subtitle">Active Members</p>
+            <div class="search">
+              <label class="search-field">
+                <svg class="icon icon-search ">
+                  <use xlink:href="i/sprite/sprite.svg#search"></use>
+                </svg>
+                <input class="search-input" type="text" placeholder="Search"/>
+              </label>
+            </div>
+            <table class="table__content"> 
+              <thead class="table__head">
+                <tr class="table__row">
+                  <th class="table__cell">Customer Name</th>
+                  <th class="table__cell">Company</th>
+                  <th class="table__cell">Phone Number</th>
+                  <th class="table__cell">Email</th>
+                  <th class="table__cell">Country</th>
+                  <th class="table__cell">Status</th>
+                </tr>
+              </thead>
+              <tbody class="table__body">
+                <tr class="table__row">
+                  <td class="table__cell">Jane Cooper</td>
+                  <td class="table__cell">Microsoft</td>
+                  <td class="table__cell">(225) 555-0118</td>
+                  <td class="table__cell">jane@microsoft.com</td>
+                  <td class="table__cell">United States</td>
+                  <td class="table__cell"> <span class="table__status table__status_active">Active</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Floyd Miles</td>
+                  <td class="table__cell">Yahoo</td>
+                  <td class="table__cell">(205) 555-0100</td>
+                  <td class="table__cell">floyd@yahoo.com</td>
+                  <td class="table__cell">Kiribati</td>
+                  <td class="table__cell"> <span class="table__status table__status_inactive">Unactive</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Ronald Richards</td>
+                  <td class="table__cell">Adobe</td>
+                  <td class="table__cell">(302) 555-0107</td>
+                  <td class="table__cell">ronald@adobe.com</td>
+                  <td class="table__cell">Israel</td>
+                  <td class="table__cell"> <span class="table__status table__status_inactive">Unactive</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Marvin McKinney</td>
+                  <td class="table__cell">Tesla</td>
+                  <td class="table__cell">(252) 555-0126</td>
+                  <td class="table__cell">marvin@tesla.com</td>
+                  <td class="table__cell">Iran</td>
+                  <td class="table__cell"> <span class="table__status table__status_active">Active</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Jerome Bell</td>
+                  <td class="table__cell">Google</td>
+                  <td class="table__cell">(629) 555-0129</td>
+                  <td class="table__cell">jerome@google.com</td>
+                  <td class="table__cell">Réunion</td>
+                  <td class="table__cell"> <span class="table__status table__status_active">Active</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Kathryn Murphy</td>
+                  <td class="table__cell">Microsoft</td>
+                  <td class="table__cell">(406) 555-0120</td>
+                  <td class="table__cell">kathryn@microsoft.com</td>
+                  <td class="table__cell">Curaçao</td>
+                  <td class="table__cell"> <span class="table__status table__status_active">Active</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Jacob Jones</td>
+                  <td class="table__cell">Yahoo</td>
+                  <td class="table__cell">(208) 555-0112</td>
+                  <td class="table__cell">jacob@yahoo.com</td>
+                  <td class="table__cell">Brazil</td>
+                  <td class="table__cell"> <span class="table__status table__status_active">Active</span>
+                  </td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table__cell">Kristin Watson</td>
+                  <td class="table__cell">Facebook</td>
+                  <td class="table__cell">(704) 555-0127</td>
+                  <td class="table__cell">kristin@facebook.com</td>
+                  <td class="table__cell">Åland Islands</td>
+                  <td class="table__cell"> <span class="table__status table__status_inactive">Unactive</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+    </div>
+    <div class="page_sidebar"> 
+      <aside class="sidebar">
+        <button class="menu_toggle" type="button">
+          <svg class="icon icon-close ">
+            <use xlink:href="i/sprite/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="sidebar__menu">
+          <div class="sidebar__menu_container">
+            <div class="sidebar__logo"> <a class="logo jsMenu" href="#"> 
+                <svg class="icon icon-logo ">
+                  <use xlink:href="i/sprite/sprite.svg#logo"></use>
+                </svg>
+                <div class="logo__container"> <span class="logo__text">Dashboard </span><span class="logo__version">v.01</span></div></a></div>
+            <nav class="nav_menu">
+              <ul class="nav_menu__list">
+                <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
+                    <div class="nav_menu__wrapper"> 
+                      <svg class="icon icon-key ">
+                        <use xlink:href="i/sprite/sprite.svg#key"></use>
+                      </svg><span class="nav_menu__span">Dashboard</span>
+                    </div></a></li>
+                <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
+                    <div class="nav_menu__wrapper"> 
+                      <svg class="icon icon-cube ">
+                        <use xlink:href="i/sprite/sprite.svg#cube"></use>
+                      </svg><span class="nav_menu__span">Product</span>
+                    </div>
+                    <svg class="icon icon-arrow ">
+                      <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                    </svg></a></li>
+                <li class="nav_menu__item"><a class="nav_menu__link jsMenu link_active" href="#">
+                    <div class="nav_menu__wrapper"> 
+                      <svg class="icon icon-user ">
+                        <use xlink:href="i/sprite/sprite.svg#user"></use>
+                      </svg><span class="nav_menu__span">Customers</span>
+                    </div>
+                    <svg class="icon icon-arrow ">
+                      <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                    </svg></a></li>
+                <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
+                    <div class="nav_menu__wrapper"> 
+                      <svg class="icon icon-wallet ">
+                        <use xlink:href="i/sprite/sprite.svg#wallet"></use>
+                      </svg><span class="nav_menu__span">Income</span>
+                    </div>
+                    <svg class="icon icon-arrow ">
+                      <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                    </svg></a></li>
+                <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
+                    <div class="nav_menu__wrapper"> 
+                      <svg class="icon icon-discount ">
+                        <use xlink:href="i/sprite/sprite.svg#discount"></use>
+                      </svg><span class="nav_menu__span">Promote</span>
+                    </div>
+                    <svg class="icon icon-arrow ">
+                      <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                    </svg></a></li>
+                <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
+                    <div class="nav_menu__wrapper"> 
+                      <svg class="icon icon-help ">
+                        <use xlink:href="i/sprite/sprite.svg#help"></use>
+                      </svg><span class="nav_menu__span">Help</span>
+                    </div>
+                    <svg class="icon icon-arrow ">
+                      <use xlink:href="i/sprite/sprite.svg#arrow"></use>
+                    </svg></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="profile"> 
+            <div class="profile__avatar_wrapper"> <img class="profile__img" src="i/avatar.jpg" alt="" width="42" height="42"/></div>
+            <div class="profile__info">
+              <p class="profile__name">Evano </p><span class="profile__role">Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

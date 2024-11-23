@@ -4,24 +4,24 @@ section.table
     include _search
 
     table.table__content 
-        thead 
-            tr
-                th Customer Name
-                th Company
-                th Phone Number
-                th Email
-                th Country
-                th Status
-        tbody 
+        thead.table__head
+            tr.table__row
+                th.table__cell Customer Name
+                th.table__cell Company
+                th.table__cell Phone Number
+                th.table__cell Email
+                th.table__cell Country
+                th.table__cell Status
+        tbody.table__body
             each customer in customers 
-                tr
-                    td #{customer.name}
-                    td #{customer.company}
-                    td #{customer.number}
-                    td #{customer.email}
-                    td #{customer.country}
-                    td 
+                tr.table__row
+                    td.table__cell #{customer.name}
+                    td.table__cell #{customer.company}
+                    td.table__cell #{customer.number}
+                    td.table__cell #{customer.email}
+                    td.table__cell #{customer.country}
+                    td.table__cell 
                         if customer.status == "Active"
-                            span Active
+                            span.table__status.table__status_active Active
                         else 
-                            span Unactive
+                            span.table__status.table__status_inactive Unactive

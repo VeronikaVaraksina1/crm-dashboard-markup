@@ -1,14 +1,16 @@
 extends _layout
 
 block vars
-  - title = "Dashboard";
+    - title = "Dashboard";
 
 block content_block
-  include blocks/_header
-  include blocks/_welcome
+    .page_content 
+        include _header
+        include _main
 
-  //- include blocks/_sidebar
-  //- .dashboard 
-  //- .dashboard__content
-  //-   include _main
-  //- include block/_mobile_menu
+    .page_sidebar 
+        include blocks/_sidebar
+    //- .dashboard 
+    //- .dashboard__content
+    //-   include _main
+    //- include block/_mobile_menu
