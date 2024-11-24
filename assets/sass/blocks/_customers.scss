@@ -1,6 +1,29 @@
 .customers {
-    padding: 30px 38px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 30px;
     border-radius: 30px;
     background: $white;
     box-shadow: 0 10px 60px 0 $table-shadow;
+}
+
+.d {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .customers {
+        padding: 30px 20px 40px;
+    }
+}
+
+@media screen and (min-width: 1290px) {
+    .customers {
+        padding: 30px 38px 40px;
+    }
 }

@@ -1,0 +1,52 @@
+.customer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    font-size: 14px;
+}
+
+.customer_list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+
+    width: 70vw;
+    padding: 10px;
+    border: 1px solid $gray;
+    border-radius: 15px;
+}
+
+.customer-list__value {
+    font-family: $poppins-reg;
+}
+
+.customer-list__status {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+
+    border-radius: 50%;
+
+    &_active {
+        border: 1px solid #00b087;
+        background-color: rgba(22, 192, 152, 0.38);
+        color: #008767;
+    }
+
+    &_inactive {
+        border: 1px solid #df0404;
+        background-color: #ffc5c5;
+        color: #df0404;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .customer_list {
+        display: none;
+    }
+}

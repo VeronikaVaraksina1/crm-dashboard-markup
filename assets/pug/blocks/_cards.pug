@@ -1,0 +1,23 @@
+ul.customer_list
+    each customer in customers 
+        li.customer_list__item 
+            .customer-list__info_section 
+                p.customer-list__label Customer Name
+                p.customer-list__value= customer.name
+            .customer-list__info_section
+                p.customer-list__label Company
+                p.customer-list__value= customer.company
+            .customer-list__info_section
+                p.customer-list__label Phone Number
+                p.customer-list__value= customer.number
+            .customer-list__info_section
+                p.customer-list__label Email
+                p.customer-list__value= customer.email
+            .customer-list__info_section
+                p.customer-list__label Country
+                p.customer-list__value= customer.country
+
+            if customer.status == "Active"
+                div.customer-list__status.customer-list__status_active
+            else 
+                div.customer-list__status.customer-list__status_inactive
