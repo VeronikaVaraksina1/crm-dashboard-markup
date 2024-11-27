@@ -2,16 +2,24 @@ $white: #fff;
 $black: #000;
 
 $cloud: #fafbff;
-
 $gray: #838383;
+$violet: #5932ea;
+
 $menu-gray: #9197b3;
 $name-gray: #757575;
-$violet: #5932ea;
+$customers-subtitle: #16c098;
+$icon-search: #7e7e7e;
+$input-hover: #cccccc;
+$input-placeholder: #b5b7c0;
 $table-shadow: rgba(226, 236, 249, 0.5);
-$transparent: transparent;
+$pagination-description: #b5b7c0;
+$pagination-link: #f5f5f5;
+$pagination-link-border: #eee;
+$pagination-text: #404b52;
 
+$transparent: transparent;
 $transition: 150ms ease-in;
 
-$poppins-reg: "poppins-regular";
-$poppins-medium: "poppins-medium";
-$poppins-semibold: "poppins-semibold";
+$poppins-reg: "poppins-regular", sans-serif;
+$poppins-medium: "poppins-medium", sans-serif;
+$poppins-semibold: "poppins-semibold", sans-serif;

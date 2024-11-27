@@ -1,7 +1,7 @@
 section.table
     table.table__content 
         thead.table__head
-            tr.table__row
+            tr.table__row_head
                 th.table__cell Customer Name
                 th.table__cell Company
                 th.table__cell Phone Number
@@ -10,7 +10,7 @@ section.table
                 th.table__cell Status
         tbody.table__body
             each customer in customers 
-                tr.table__row
+                tr.table__row_body
                     td.table__cell #{customer.name}
                     td.table__cell #{customer.company}
                     td.table__cell #{customer.number}

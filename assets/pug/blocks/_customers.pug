@@ -1,9 +1,14 @@
 .customers 
-    .d
-        .f 
+    .customers__header
+        .customers__info 
             h2.table__title All Customers 
             p.title__subtitle Active Members
-        include _search
+        .customers__search 
+            include _search
     include _table
     include _cards
+
+    .customers__footer
+        p.customers__description Showing data 1 to 8 of  256K entries
+        include _pagination
 

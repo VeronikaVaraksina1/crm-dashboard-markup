@@ -1,0 +1,32 @@
+.pagination__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.pagination__link {
+    display: block;
+    text-align: center;
+    min-width: 25px;
+    height: 24px;
+    padding: 6px 9px;
+    border: 1px solid $pagination-link-border;
+    border-radius: 4px;
+
+    background-color: $pagination-link;
+    transition: border $transition, color $transition,
+        background-color $transition;
+
+    color: $pagination-text;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $violet;
+        color: $white;
+        background-color: $violet;
+    }
+}

@@ -1,0 +1,42 @@
+.search {
+    position: relative;
+}
+
+.search_field {
+    background: $white;
+}
+
+.search_field > {
+    .icon-search {
+        position: absolute;
+        top: 10px;
+        left: 9px;
+
+        font-size: 1.2rem;
+        color: $icon-search;
+    }
+}
+
+.search_input {
+    width: 100%;
+    height: 38px;
+    padding: 0 10px 0 40px;
+    border: 1px solid $transparent;
+    border-radius: 10px;
+    outline: $transparent;
+
+    background: $cloud;
+    transition: border $transition;
+
+    &::placeholder {
+        font-family: $poppins-reg;
+        font-size: 12px;
+        letter-spacing: -0.01em;
+        color: $input-placeholder;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $input-hover;
+    }
+}
