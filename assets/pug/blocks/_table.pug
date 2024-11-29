@@ -11,12 +11,12 @@ section.table
         tbody.table__body
             each customer in customers 
                 tr.table__row_body
-                    td.table__cell #{customer.name}
-                    td.table__cell #{customer.company}
-                    td.table__cell #{customer.number}
-                    td.table__cell #{customer.email}
-                    td.table__cell #{customer.country}
-                    td.table__cell 
+                    td.table__cell= customer.name
+                    td.table__cell= customer.company
+                    td.table__cell= customer.number
+                    td.table__cell= customer.email
+                    td.table__cell= customer.country
+                    td.table__cell.table__cell_status 
                         if customer.status == "Active"
                             span.table__status.table__status_active Active
                         else 

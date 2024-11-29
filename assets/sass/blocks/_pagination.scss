@@ -6,11 +6,11 @@
 }
 
 .pagination__link {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 25px;
     height: 24px;
-    padding: 6px 9px;
     border: 1px solid $pagination-link-border;
     border-radius: 4px;
 

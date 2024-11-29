@@ -6,7 +6,7 @@
     z-index: 9999;
 
     width: 306px;
-    height: 100vh;
+    height: 100%;
     padding: 38px 28px;
 
     background-color: $white;
@@ -45,10 +45,10 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1270px) {
     .sidebar {
-        position: sticky;
         transform: none;
+        padding: 38px 28px 76px 28px;
     }
 
     .sidebar > {

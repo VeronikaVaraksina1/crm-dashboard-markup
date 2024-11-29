@@ -1,36 +1,36 @@
 .table__content {
-    width: 888px;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: -0.01em;
     border-collapse: collapse;
-}
-
-.table__head {
-    border-bottom: 1px solid #eee;
-    color: #b5b7c0;
+    word-wrap: break-word;
 }
 
 .table__cell {
-    padding: 19px 25px 19px 0;
-    border-bottom: 1px solid #eee;
-    color: #292d32;
+    padding: 19px 10px;
+    border-bottom: 1px solid $table-border-bottom;
+    color: $table-cell-text;
     text-align: start;
 }
 
-.table__row_head > {
-    .table__cell {
-        color: #b5b7c0;
-    }
+.table__row_head .table__cell {
+    color: $table-head-text;
 }
 
-tr > {
-    .table__cell:last-child {
-        text-align: center;
-    }
+.table__row_head .table__cell:last-child {
+    text-align: end;
+    padding: 0 22px 0 0;
 }
 
-.table__cell--status {
-    text-align: center;
+.table__cell:first-child {
+    padding: 19px 4px 19px 0;
+}
+
+.table__cell:last-child {
+    padding: 19px 0 19px 4px;
+}
+
+.table__cell_status {
+    text-align: right;
 }
 
 .table__status {
@@ -47,20 +47,40 @@ tr > {
     letter-spacing: -0.01em;
 
     &_active {
-        border: 1px solid #00b087;
-        background-color: rgba(22, 192, 152, 0.38);
-        color: #008767;
+        border: 1px solid $status-active-border;
+        background-color: $status-active-bg;
+        color: $status-active-text;
     }
 
     &_inactive {
-        border: 1px solid #df0404;
-        background-color: #ffc5c5;
-        color: #df0404;
+        border: 1px solid $status-unactive-border;
+        background-color: $status-unactive-bg;
+        color: $status-unactive-text;
     }
 }
 
 @media screen and (max-width: 767px) {
     .table {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .table__content {
+        font-size: 14px;
+    }
+
+    .table__cell:first-child {
+        padding: 19px 10px 19px 0;
+    }
+
+    .table__cell:last-child {
+        padding: 19px 0 19px 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .table__cell {
+        padding: 19px 29px;
     }
 }

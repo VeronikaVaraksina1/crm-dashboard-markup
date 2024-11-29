@@ -40,7 +40,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    padding: 32px 0 0 0;
+    padding: 38px 0 0 0;
 }
 
 .customers__description {
@@ -76,8 +76,8 @@
     }
 }
 
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 1270px) {
     .customers {
-        padding: 30px 40px 40px;
+        padding: 38px 40px 40px 38px;
     }
 }

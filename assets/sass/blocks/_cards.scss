@@ -37,19 +37,19 @@
     border-radius: 50%;
 
     &_active {
-        border: 1px solid #00b087;
-        background-color: rgba(22, 192, 152, 0.38);
-        color: #008767;
+        border: 1px solid $status-active-border;
+        background-color: $status-active-bg;
+        color: $status-active-text;
     }
 
     &_inactive {
-        border: 1px solid #df0404;
-        background-color: #ffc5c5;
-        color: #df0404;
+        border: 1px solid $status-unactive-border;
+        background-color: $status-unactive-bg;
+        color: $status-unactive-text;
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .customer_list {
         display: none;
     }
