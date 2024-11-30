@@ -17,14 +17,13 @@
     color: $menu-gray;
     font-size: 14px;
     letter-spacing: -0.01em;
-    transition: background-color $transition, color $transition,
-        border $transition;
+    transition: background $transition, color $transition, border $transition;
 
     &:hover,
     &:focus {
         border: 1px solid $black;
         color: $white;
-        background-color: $violet;
+        background: $violet;
     }
 }
 
@@ -33,23 +32,25 @@
 
     border: 1px solid $black;
     color: $white;
-    background-color: $violet;
+    background: $violet;
 }
 
-.icon-cube,
-.icon-discount,
-.icon-help,
-.icon-key,
-.icon-user,
-.icon-wallet {
-    font-size: 1.375rem;
+.nav_menu__content > {
+    .icon-cube,
+    .icon-discount,
+    .icon-help,
+    .icon-key,
+    .icon-user,
+    .icon-wallet {
+        font-size: 1.375rem;
+    }
 }
 
 .icon-arrow {
     font-size: 0.625rem;
 }
 
-.nav_menu__wrapper {
+.nav_menu__content {
     display: flex;
     align-items: center;
     gap: 14px;

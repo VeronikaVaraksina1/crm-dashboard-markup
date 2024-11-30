@@ -3,13 +3,9 @@
     margin: 0 0 20px 0;
 }
 
-.header > {
-    .menu_toggle {
-        .icon-menu {
-            font-size: 0.6rem;
-            color: $black;
-        }
-    }
+.menu_toggle .icon-menu {
+    font-size: 0.6rem;
+    color: $black;
 }
 
 @media screen and (min-width: 1270px) {

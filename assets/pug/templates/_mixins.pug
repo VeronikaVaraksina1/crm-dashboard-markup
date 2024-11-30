@@ -7,7 +7,7 @@ mixin navItem(iconId, text, mod="", hasArrow=true, link="#")
     - mod = mod || ''
     li.nav_menu__item
         a.nav_menu__link.jsMenu(class=mod, href=link)
-            .nav_menu__wrapper 
+            .nav_menu__content 
                 +icon(iconId)
                 span.nav_menu__span= text
             if hasArrow

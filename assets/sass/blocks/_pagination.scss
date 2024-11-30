@@ -14,9 +14,8 @@
     border: 1px solid $pagination-link-border;
     border-radius: 4px;
 
-    background-color: $pagination-link;
-    transition: border $transition, color $transition,
-        background-color $transition;
+    background: $pagination-link;
+    transition: border $transition, color $transition, background $transition;
 
     color: $pagination-text;
     font-size: 12px;
@@ -27,6 +26,6 @@
     &:focus {
         border: 1px solid $violet;
         color: $white;
-        background-color: $violet;
+        background: $violet;
     }
 }

@@ -6,15 +6,13 @@
     background: $white;
 }
 
-.search_field > {
-    .icon-search {
-        position: absolute;
-        top: 10px;
-        left: 9px;
+.search_field .icon-search {
+    position: absolute;
+    top: 10px;
+    left: 9px;
 
-        font-size: 1.2rem;
-        color: $icon-search;
-    }
+    font-size: 1.2rem;
+    color: $icon-search;
 }
 
 .search_input {

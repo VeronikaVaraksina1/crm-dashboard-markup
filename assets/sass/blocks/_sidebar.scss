@@ -9,7 +9,7 @@
     height: 100%;
     padding: 38px 28px;
 
-    background-color: $white;
+    background: $white;
     transform: translateX(-100%);
     transition: transform $transition;
 
@@ -21,7 +21,7 @@
     }
 
     &__logo {
-        margin-bottom: 55px;
+        margin: 0 0 55px 0;
     }
 
     &.open {
@@ -29,20 +29,18 @@
     }
 }
 
-.sidebar > {
-    .menu_toggle {
-        position: absolute;
-        top: 16px;
-        right: 20px;
-        z-index: 99999;
+.sidebar .menu_toggle {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    z-index: 99999;
 
-        padding: 5px;
+    padding: 5px;
+}
 
-        .icon-close {
-            font-size: 0.9rem;
-            color: $black;
-        }
-    }
+.sidebar .menu_toggle .icon-close {
+    font-size: 0.9rem;
+    color: $black;
 }
 
 @media screen and (min-width: 1270px) {
@@ -51,9 +49,7 @@
         padding: 38px 28px 76px 28px;
     }
 
-    .sidebar > {
-        .menu_toggle {
-            display: none;
-        }
+    .sidebar .menu_toggle {
+        display: none;
     }
 }

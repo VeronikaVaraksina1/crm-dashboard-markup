@@ -71,7 +71,11 @@ function styles() {
 }
 
 function scripts() {
-    return src(["assets/**/*.js", "!assets/js/main.min.js"])
+    return src([
+        "assets/**/*.js",
+        "!assets/js/main.min.js",
+        "!assets/js/font-loader.js",
+    ])
         .pipe(concat("main.min.js"))
         .pipe(uglify())
         .pipe(dest("dist/js/"))
@@ -116,6 +120,10 @@ function copySprite() {
     return src("assets/i/sprite/sprite.svg").pipe(dest("dist/i/sprite/"));
 }
 
+function copyFontLoader() {
+    return src("assets/js/font-loader.js").pipe(dest("dist/js/"));
+}
+
 function building() {
     return src(
         ["dist/styles/**/*", "dist/js/**/*", "dist/**/*.html", "dist/i/**/*"],
@@ -126,6 +134,7 @@ function building() {
 }
 
 exports.fontsConvert = fontsConvert;
+exports.copyFontLoader = copyFontLoader;
 exports.pugToHtml = pugToHtml;
 exports.images = images;
 exports.styles = styles;
@@ -138,10 +147,12 @@ exports.watching = watching;
 exports.generateSprite = series(sprite, copySprite);
 exports.build = series(cleanDist, building);
 exports.default = parallel(
+    copyFontLoader,
     pugToHtml,
     styles,
     images,
     scripts,
+    copySprite,
     watching,
     browsersync
 );

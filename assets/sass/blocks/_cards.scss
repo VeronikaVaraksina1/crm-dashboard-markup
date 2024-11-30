@@ -38,13 +38,13 @@
 
     &_active {
         border: 1px solid $status-active-border;
-        background-color: $status-active-bg;
+        background: $status-active-bg;
         color: $status-active-text;
     }
 
     &_inactive {
         border: 1px solid $status-unactive-border;
-        background-color: $status-unactive-bg;
+        background: $status-unactive-bg;
         color: $status-unactive-text;
     }
 }

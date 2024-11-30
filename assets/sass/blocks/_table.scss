@@ -5,6 +5,22 @@
     word-wrap: break-word;
 }
 
+.table__row_head {
+    position: relative;
+}
+
+.table__row_head::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -38px;
+    z-index: 99999;
+    width: calc(100% + 78px);
+    height: 1px;
+    background: $table-border-bottom;
+}
+
 .table__cell {
     padding: 19px 10px;
     border-bottom: 1px solid $table-border-bottom;
@@ -42,19 +58,18 @@
     min-height: 29px;
     border-radius: 4px;
 
-    font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.01em;
 
     &_active {
         border: 1px solid $status-active-border;
-        background-color: $status-active-bg;
+        background: $status-active-bg;
         color: $status-active-text;
     }
 
     &_inactive {
         border: 1px solid $status-unactive-border;
-        background-color: $status-unactive-bg;
+        background: $status-unactive-bg;
         color: $status-unactive-text;
     }
 }
