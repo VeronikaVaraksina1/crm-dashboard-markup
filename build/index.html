@@ -31,11 +31,11 @@
             </div>
             <div class="customers__search"> 
               <div class="search">
-                <label class="search_field">
+                <label class="search_field" for="searchInput">
                   <svg class="icon icon-search ">
                     <use xlink:href="i/sprite/sprite.svg#search"></use>
                   </svg>
-                  <input class="search_input" type="text" placeholder="Search"/>
+                  <input class="search_input" id="searchInput" type="text" placeholder="Search"/>
                 </label>
               </div>
             </div>
@@ -316,18 +316,16 @@
           </ul>
           <div class="customers__footer">
             <p class="customers__description">Showing data 1 to 8 of  256K entries</p>
-            <div class="pagination">
-              <ul class="pagination__list"> 
-                <li class="pagination__item"><a class="pagination__link" href="#">&lt;</a></li>
-                <li class="pagination__item pagination__item_active"><a class="pagination__link" href="#">1</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
-                <li class="pagination__item"><span class="pagination__dots">...</span></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">40</a></li>
-                <li class="pagination__item"><a class="pagination__link" href="#">&gt;</a></li>
-              </ul>
-            </div>
+            <ul class="pagination__list"> 
+              <li class="pagination__item"><a class="pagination__link" href="#">&lt;</a></li>
+              <li class="pagination__item pagination__item_active"><a class="pagination__link" href="#">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item"><span class="pagination__dots">...</span></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">40</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">&gt;</a></li>
+            </ul>
           </div>
         </section>
       </main>
@@ -348,13 +346,13 @@
           <nav class="nav_menu">
             <ul class="nav_menu__list">
               <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
-                  <div class="nav_menu__wrapper"> 
+                  <div class="nav_menu__content"> 
                     <svg class="icon icon-key ">
                       <use xlink:href="i/sprite/sprite.svg#key"></use>
                     </svg><span class="nav_menu__span">Dashboard</span>
                   </div></a></li>
               <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
-                  <div class="nav_menu__wrapper"> 
+                  <div class="nav_menu__content"> 
                     <svg class="icon icon-cube ">
                       <use xlink:href="i/sprite/sprite.svg#cube"></use>
                     </svg><span class="nav_menu__span">Product</span>
@@ -363,7 +361,7 @@
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
                   </svg></a></li>
               <li class="nav_menu__item"><a class="nav_menu__link jsMenu link_active" href="#">
-                  <div class="nav_menu__wrapper"> 
+                  <div class="nav_menu__content"> 
                     <svg class="icon icon-user ">
                       <use xlink:href="i/sprite/sprite.svg#user"></use>
                     </svg><span class="nav_menu__span">Customers</span>
@@ -372,7 +370,7 @@
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
                   </svg></a></li>
               <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
-                  <div class="nav_menu__wrapper"> 
+                  <div class="nav_menu__content"> 
                     <svg class="icon icon-wallet ">
                       <use xlink:href="i/sprite/sprite.svg#wallet"></use>
                     </svg><span class="nav_menu__span">Income</span>
@@ -381,7 +379,7 @@
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
                   </svg></a></li>
               <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
-                  <div class="nav_menu__wrapper"> 
+                  <div class="nav_menu__content"> 
                     <svg class="icon icon-discount ">
                       <use xlink:href="i/sprite/sprite.svg#discount"></use>
                     </svg><span class="nav_menu__span">Promote</span>
@@ -390,7 +388,7 @@
                     <use xlink:href="i/sprite/sprite.svg#arrow"></use>
                   </svg></a></li>
               <li class="nav_menu__item"><a class="nav_menu__link jsMenu" href="#">
-                  <div class="nav_menu__wrapper"> 
+                  <div class="nav_menu__content"> 
                     <svg class="icon icon-help ">
                       <use xlink:href="i/sprite/sprite.svg#help"></use>
                     </svg><span class="nav_menu__span">Help</span>

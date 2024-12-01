@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
 const svgSprite = require("gulp-svg-sprite");
 const cssfont64 = require("gulp-cssfont64");
+const purify = require("gulp-purifycss");
 
 function fontsConvert() {
     return src(["assets/fonts/*.woff", "assets/fonts/*.woff2"])
@@ -96,6 +97,12 @@ function purgeCss() {
         .pipe(dest("dist/styles/"));
 }
 
+function clearCSS() {
+    return src("dist/styles/*.css")
+        .pipe(purify(["dist/**/*.html", "dist/**/*.js"]))
+        .pipe(dest("build/styles/"));
+}
+
 function watching() {
     watch(["assets/sass/**/*.scss"], styles);
     watch(["assets/i/"], images);
@@ -142,6 +149,7 @@ exports.sprite = sprite;
 exports.copySprite = copySprite;
 exports.scripts = scripts;
 exports.purgeCss = purgeCss;
+exports.clearCSS = clearCSS;
 exports.watching = watching;
 
 exports.generateSprite = series(sprite, copySprite);
