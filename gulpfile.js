@@ -6,7 +6,6 @@ const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
 const clean = require("gulp-clean");
-const purgecss = require("gulp-purgecss");
 const webp = require("gulp-webp");
 const imagemin = require("gulp-imagemin");
 const newer = require("gulp-newer");
@@ -83,23 +82,10 @@ function scripts() {
         .pipe(browserSync.stream());
 }
 
-function purgeCss() {
-    return src(["dist/styles/main_global.min.css"])
-        .pipe(
-            purgecss({
-                content: [
-                    "assets/**/*.html",
-                    "assets/**/*.pug",
-                    "assets/**/*.js",
-                ],
-            })
-        )
-        .pipe(dest("dist/styles/"));
-}
-
 function clearCSS() {
     return src("dist/styles/*.css")
         .pipe(purify(["dist/**/*.html", "dist/**/*.js"]))
+        .pipe(scss({ outputStyle: "compressed" }))
         .pipe(dest("build/styles/"));
 }
 
@@ -148,7 +134,6 @@ exports.styles = styles;
 exports.sprite = sprite;
 exports.copySprite = copySprite;
 exports.scripts = scripts;
-exports.purgeCss = purgeCss;
 exports.clearCSS = clearCSS;
 exports.watching = watching;
 
