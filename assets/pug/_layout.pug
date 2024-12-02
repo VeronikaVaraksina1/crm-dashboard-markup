@@ -10,9 +10,16 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(name="format-detection" content="telephone=no")
+        link(rel="icon" type="image/png" href="i/favicon/favicon-96x96.png" sizes="96x96")
+        link(rel="icon" type="image/svg+xml" href="i/favicon/favicon.svg")
+        link(rel="shortcut icon" href="i/favicon/favicon.ico")
+        link(rel="apple-touch-icon" sizes="180x180" href="i/favicon/apple-touch-icon.png")
+        meta(name="apple-mobile-web-app-title" content="MyWebSite")
+        link(rel="manifest" href="i/favicon/site.webmanifest")
         script(src="js/font-loader.js")
         link(rel="stylesheet" media="all" href="styles/main_global.min.css")
         title #{title}
     body.page 
         block content_block
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js")
         script(src="js/main.min.js")

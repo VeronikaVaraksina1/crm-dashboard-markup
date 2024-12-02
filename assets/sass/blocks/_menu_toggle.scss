@@ -1,0 +1,10 @@
+.menu_toggle {
+    outline: $transparent;
+    color: $black;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+        color: $gray;
+    }
+}

@@ -23,11 +23,12 @@
     border-radius: 10px;
     outline: $transparent;
 
+    font-family: $poppins-regular;
     background: $cloud;
     transition: border $transition;
 
     &::placeholder {
-        font-family: $poppins-reg;
+        font-family: $poppins-regular;
         font-size: 12px;
         letter-spacing: -0.01em;
         color: $input-placeholder;

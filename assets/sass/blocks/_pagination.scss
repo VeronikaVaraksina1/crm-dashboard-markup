@@ -13,6 +13,7 @@
     height: 24px;
     border: 1px solid $pagination-link-border;
     border-radius: 4px;
+    outline: $transparent;
 
     background: $pagination-link;
     transition: border $transition, color $transition, background $transition;

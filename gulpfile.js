@@ -21,7 +21,7 @@ function fontsConvert() {
 }
 
 function images() {
-    return src("assets/i/**/*")
+    return src(["assets/i/**/*", "!assets/i/favicon/*"])
         .pipe(newer("dist/i/"))
         .pipe(webp({ quality: 80 }))
 
@@ -92,7 +92,7 @@ function clearCSS() {
 function watching() {
     watch(["assets/sass/**/*.scss"], styles);
     watch(["assets/i/"], images);
-    watch(["assets/js/main.js"], scripts);
+    watch(["assets/js/*.js"], scripts);
     watch(["assets/pug/**/*.pug"], pugToHtml);
     watch(["assets/**/*.html"]).on("change", browserSync.reload);
 }

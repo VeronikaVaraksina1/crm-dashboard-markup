@@ -39,7 +39,11 @@
 
 .sidebar .menu_toggle .icon-close {
     font-size: 0.9rem;
-    color: $black;
+}
+
+.sidebarAnimation {
+    opacity: 0;
+    transform: translateX(-30px);
 }
 
 @media screen and (min-width: 1270px) {
