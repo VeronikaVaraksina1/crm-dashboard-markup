@@ -1,4 +1,4 @@
-# Test Task: Dashboard
+# Test Task: Dashboard (Markup)
 
 ## Description
 
@@ -10,6 +10,7 @@ This project is a simple dashboard application that displays customer data. It i
 -   **SASS (SCSS)**: A preprocessor for writing CSS with enhanced features like variables, mixins, and nested styles.
 -   **JavaScript (JS)**: Adds interactivity and dynamic functionality to the project.
 -   **Gulp**: A task runner for automating development workflows, including compiling, minifying, and optimizing assets.
+-   **GSAP (GreenSock Animation Platform)**: A powerful animation library used to create smooth and complex animations for elements within the application.
 
 ## Features
 
